@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  font-family: Libre Franklin, sans-serif;
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  max-width: 600px;
+}
+
+.img-box img {
+  width: 100%;
+}
+.logo-img {
+  margin-bottom: 30px;
+}
+.headline {
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.headline span {
+  color: hsl(0, 0%, 59%);
+}
+.sub-headline {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 59%);
+}
+.sign-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  max-width: 500px;
+}
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  min-height: 65px;
+}
+input {
+  padding: 10px 15px;
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 30px;
+  margin-bottom: 10px;
+  outline: 0;
+  height: 50px;
+}
+input::placeholder {
+  color: hsl(0, 1%, 73%);
+}
+.error {
+  text-align: center;
+  color: red;
+  font-size: 16px;
+}
+.input-control.error input {
+  border-color: red;
+}
+.btn-submit {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  width: 100%;
+}
+.btn-submit:hover {
+  background-color: hsl(223, 82%, 72%);
+}
+.logos {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.logo {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 1%, 79%);
+  color: hsl(223, 87%, 63%);
+}
+.copyright {
+  color: hsl(0, 1%, 79%);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .container {
+    max-width: 800px;
+  }
+  .sign-form {
+    justify-self: center;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .headline {
+    font-size: 48px;
+  }
+  .sign-form {
+    width: 100%;
+    max-width: 800px;
+  }
+  .logo:hover {
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+  }
+}

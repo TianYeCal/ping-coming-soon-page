@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="sign-form">
+        <h1 class="logo-img"><img src="./images/logo.svg" alt="" /></h1>
+        <p class="headline">
+          <span>We are launching </span> <strong>soon!</strong>
+        </p>
+        <p class="sub-headline">Subscribe and get notified</p>
+        <form class="form" action="/">
+          <div class="input-control">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Your email address..."
+            />
+            <div class="error"></div>
+          </div>
+          <button class="btn-submit" type="submit">Notify Me</button>
+        </form>
+      </div>
+      <div class="img-box">
+        <img src="./images/illustration-dashboard.png" alt="" />
+      </div>
+      <div class="copyrights">
+        <div class="logos">
+          <ion-icon class="logo" name="logo-facebook"></ion-icon
+          ><ion-icon class="logo" name="logo-instagram"></ion-icon>
+          <ion-icon class="logo" name="logo-twitter"></ion-icon>
+        </div>
+        <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
+      </div>
+      <div>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
